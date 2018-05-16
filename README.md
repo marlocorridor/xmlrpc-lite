@@ -29,8 +29,9 @@ t.call(
     api_module: 'ipb',
     api_key: 'xxxxxx'
   },
-  function(err, xml) {
+  function(err, res) {
     if (err) throw err;
+    var xml = res.text;
     console.log(xml);
   }
 );
